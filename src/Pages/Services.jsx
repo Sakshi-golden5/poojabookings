@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 
 const Services = () => {
   const handleBookNowClick = (e) => {
-    e.preventDefault(); 
-    openModal(pooja); 
+    e.preventDefault();
+    window.open('https://outlook.office.com/book/BookAPanditji@goldenfive.net/?ismsaljsauthenabled', '_blank');
   };
 
   const navigate = useNavigate();
@@ -27,6 +27,7 @@ const Services = () => {
               <button
             className="px-4 py-2 text-sm font-medium border border-gray-300 rounded hover:bg-gray-50 transition-all cursor-pointer mt-7 bg-black text-white"
             onClick={handleBookNowClick}
+            as="a"
           >
             Book Now
           </button>

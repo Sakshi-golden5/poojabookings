@@ -19,7 +19,7 @@ const Card = ({ pooja, openModal }) => {
 
   const handleBookNowClick = (e) => {
     e.preventDefault();
-    openModal(pooja);
+    window.open('https://outlook.office.com/book/BookAPanditji@goldenfive.net/?ismsaljsauthenabled', '_blank');
   };
 
   return (
@@ -46,6 +46,7 @@ const Card = ({ pooja, openModal }) => {
           <button
             className="px-4 py-2 text-sm font-medium border border-gray-300 rounded hover:bg-gray-50 transition-all cursor-pointer"
             onClick={handleBookNowClick}
+            as="a"
           >
             Book Now
           </button>
